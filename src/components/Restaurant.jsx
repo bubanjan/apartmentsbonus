@@ -5,7 +5,7 @@ import { Container, Typography } from "@mui/material";
 const Restaurant = () => {
     return (
         <Container>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h4" gutterBottom>
                 Restaurant
             </Typography>
             <Typography variant="body1">

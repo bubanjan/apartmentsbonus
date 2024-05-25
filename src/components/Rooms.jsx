@@ -7,32 +7,38 @@ import "react-image-lightbox/style.css"; // This only needs to be imported once 
 const rooms = [
     {
         title: "Room 1",
-        description: "Test about room 1",
+        description:
+            "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, big terrace, bathroom ",
         folder: "room1",
     },
     {
         title: "Room 2",
-        description: "Test about room 2",
+        description:
+            "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet , kitchen, balcony, bathroom",
         folder: "room2",
     },
     {
         title: "Room 3",
-        description: "Test about room 3",
+        description:
+            "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
         folder: "room3",
     },
     {
         title: "Room 4",
-        description: "Test about room 4",
+        description:
+            "Twin room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
         folder: "room4",
     },
     {
         title: "Room 10",
-        description: "Test about room 5",
+        description:
+            "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet , kitchen, balcony, bathroom  ",
         folder: "room10",
     },
     {
         title: "Room 12",
-        description: "Test about room 6",
+        description:
+            "one-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet , terrace, bathroom ",
         folder: "room12",
     },
 ];

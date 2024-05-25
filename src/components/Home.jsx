@@ -5,7 +5,7 @@ import { Container, Typography, Box } from "@mui/material";
 const Home = () => {
     return (
         <Container>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h4" gutterBottom>
                 Bonus Apartments Budva
             </Typography>
             <Typography variant="body1" paragraph>

@@ -14,7 +14,12 @@ const Home = () => {
             <Typography variant="body1" paragraph>
                 {t("intro")}
             </Typography>
-            <Box display="flex" justifyContent="center" alignItems="center">
+            <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                sx={{ mt: 15 }}
+            >
                 <img
                     src="/images/general/gen1.jpg"
                     alt="Hotel"

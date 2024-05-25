@@ -1,11 +1,19 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
+import {
+    AppBar,
+    Toolbar,
+    Typography,
+    Button,
+    Container,
+    Box,
+} from "@mui/material";
 import Home from "./components/Home";
 import Rooms from "./components/Rooms";
 import Restaurant from "./components/Restaurant";
 import BookRoom from "./components/BookRoom";
+import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
 
 function App() {
     return (
@@ -27,6 +35,9 @@ function App() {
                     <Button color="inherit" component={Link} to="/book-room">
                         Book Room
                     </Button>
+                    <Box ml={2}>
+                        <LanguageSwitcher />
+                    </Box>
                 </Toolbar>
             </AppBar>
 

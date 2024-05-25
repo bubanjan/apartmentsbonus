@@ -8,11 +8,18 @@ const Home = () => {
             <Typography variant="h2" gutterBottom>
                 Welcome to Our Hotel
             </Typography>
-            <Box>
+            <Typography variant="body1" paragraph>
+                Nestled in the heart of the city, our hotel offers a unique
+                blend of luxury and comfort. Whether you're here for business or
+                leisure, you'll find our amenities and services designed to meet
+                your every need. Enjoy a relaxing stay with us and experience
+                the best hospitality in town.
+            </Typography>
+            <Box display="flex" justifyContent="center" alignItems="center">
                 <img
-                    src="https://via.placeholder.com/800x400"
+                    src="/images/general/gen1.jpg"
                     alt="Hotel"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "50%", height: "auto" }}
                 />
             </Box>
         </Container>

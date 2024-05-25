@@ -1,16 +1,26 @@
 // src/components/BookRoom.js
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 
 const BookRoom = () => {
     return (
         <Container>
-            <Typography variant="h2" gutterBottom>
-                Book a Room
+            <Typography variant="h4" gutterBottom>
+                Book a room
             </Typography>
-            <Typography variant="body1">
-                Here you can book a room at our hotel.
-            </Typography>
+            {/* <Typography variant="body1">
+                You can see availability and prices on our booking.com site and
+                book rooms.
+            </Typography> */}
+            <Box
+                component="iframe"
+                src="https://www.booking.com/hotel/me/apartments-bonus-budva.html"
+                width="100%"
+                height="600px"
+                style={{ border: 0 }}
+                title="Booking.com"
+                allowFullScreen
+            />
         </Container>
     );
 };

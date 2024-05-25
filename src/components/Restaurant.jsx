@@ -9,7 +9,8 @@ const Restaurant = () => {
                 Restaurant
             </Typography>
             <Typography variant="body1">
-                Here you can find details about our restaurant.
+                Restaurant on the groundfloor of the object which offers half
+                board, full board, breakfast only or a-la-cart.
             </Typography>
         </Container>
     );

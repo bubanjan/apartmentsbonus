@@ -13,7 +13,8 @@ import Home from "./components/Home";
 import Rooms from "./components/Rooms";
 import Restaurant from "./components/Restaurant";
 import BookRoom from "./components/BookRoom";
-import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
+import Contact from "./components/Contact";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 function App() {
     return (
@@ -35,6 +36,9 @@ function App() {
                     <Button color="inherit" component={Link} to="/book-room">
                         Book Room
                     </Button>
+                    <Button color="inherit" component={Link} to="/contact">
+                        Contact
+                    </Button>
                     <Box ml={2}>
                         <LanguageSwitcher />
                     </Box>
@@ -46,6 +50,7 @@ function App() {
                     <Route path="/rooms" element={<Rooms />} />
                     <Route path="/restaurant" element={<Restaurant />} />
                     <Route path="/book-room" element={<BookRoom />} />
+                    <Route path="/contact" element={<Contact />} />
                     <Route path="/" element={<Home />} />
                 </Routes>
             </Container>

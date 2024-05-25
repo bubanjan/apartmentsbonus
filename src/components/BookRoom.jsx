@@ -4,24 +4,28 @@ import { Container, Typography, Box } from "@mui/material";
 
 const BookRoom = () => {
     return (
-        <Container>
-            <Typography variant="h4" gutterBottom>
-                Book a room
-            </Typography>
-            {/* <Typography variant="body1">
-                You can see availability and prices on our booking.com site and
-                book rooms.
-            </Typography> */}
-            <Box
-                component="iframe"
+        <Box
+            sx={{
+                position: "relative",
+                width: "100%",
+                height: "100vh",
+                overflow: "hidden",
+            }}
+        >
+            <iframe
                 src="https://www.booking.com/hotel/me/apartments-bonus-budva.html"
-                width="100%"
-                height="600px"
-                style={{ border: 0 }}
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    border: 0,
+                }}
                 title="Booking.com"
                 allowFullScreen
             />
-        </Container>
+        </Box>
     );
 };
 

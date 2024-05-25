@@ -13,7 +13,7 @@ function App() {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" style={{ flexGrow: 1 }}>
-                        Hotel Presentation
+                        Bonus Apartments
                     </Typography>
                     <Button color="inherit" component={Link} to="/">
                         Home

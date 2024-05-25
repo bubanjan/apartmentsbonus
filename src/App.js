@@ -15,32 +15,46 @@ import Restaurant from "./components/Restaurant";
 import BookRoom from "./components/BookRoom";
 import Contact from "./components/Contact";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import Footer from "./components/Footer.jsx"; // Import the Footer component
 
 function App() {
     return (
         <Router>
             <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6" style={{ flexGrow: 1 }}>
-                        Bonus Apartments
-                    </Typography>
-                    <Button color="inherit" component={Link} to="/">
-                        Home
-                    </Button>
-                    <Button color="inherit" component={Link} to="/rooms">
-                        Rooms
-                    </Button>
-                    <Button color="inherit" component={Link} to="/restaurant">
-                        Restaurant
-                    </Button>
-                    <Button color="inherit" component={Link} to="/book-room">
-                        Book Room
-                    </Button>
-                    <Button color="inherit" component={Link} to="/contact">
-                        Contact
-                    </Button>
-                    <Box ml={2}>
-                        <LanguageSwitcher />
+                <Toolbar sx={{ justifyContent: "center" }}>
+                    <Box sx={{ display: "flex", alignItems: "center" }}>
+                        <Typography
+                            variant="h6"
+                            style={{ flexGrow: 1, marginRight: 45 }}
+                        >
+                            Bonus Apartments
+                        </Typography>
+                        <Button color="inherit" component={Link} to="/">
+                            Home
+                        </Button>
+                        <Button color="inherit" component={Link} to="/rooms">
+                            Rooms
+                        </Button>
+                        <Button
+                            color="inherit"
+                            component={Link}
+                            to="/restaurant"
+                        >
+                            Restaurant
+                        </Button>
+                        <Button
+                            color="inherit"
+                            component={Link}
+                            to="/book-room"
+                        >
+                            Book Room
+                        </Button>
+                        <Button color="inherit" component={Link} to="/contact">
+                            Contact
+                        </Button>
+                        <Box ml={2}>
+                            <LanguageSwitcher />
+                        </Box>
                     </Box>
                 </Toolbar>
             </AppBar>

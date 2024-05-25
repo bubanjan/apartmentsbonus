@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <Container>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h4" gutterBottom>
                 {t("welcome")}
             </Typography>
             <Typography variant="body1" paragraph>

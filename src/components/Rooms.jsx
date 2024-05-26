@@ -69,14 +69,14 @@ const Rooms = () => {
                 {rooms.map((room, index) => (
                     <Grid item xs={12} sm={6} md={4} sx={{ mt: 3 }} key={index}>
                         <Box
-                            sx={{ border: "2px solid lightBlue" }} //  border: "2px solid pink",
+                            sx={{ border: "2px solid lightBlue" }} // border: "2px solid pink",
                             padding={2}
                             display="flex"
                             flexDirection="column"
                             justifyContent="space-between"
                             height="100%"
                         >
-                            <Box sx={{ mb: 0.5 }}>
+                            <Box sx={{ mb: 1 }}>
                                 <Typography
                                     variant="h6"
                                     gutterBottom
@@ -109,15 +109,14 @@ const Rooms = () => {
                                     objectFit: "cover", // Maintain aspect ratio
                                     border: "2px solid pink",
                                     borderRadius: "2px",
-                                    mb: 0, // Removed margin-bottom
+                                    mb: 0, // Small margin-bottom
                                 }}
                             />
                             <Box
-                                mt={1} // Ensures some space between the image and the button
                                 display="flex"
                                 flexDirection="column"
                                 gap={1}
-                                sx={{ mt: "auto" }} // Push buttons to the bottom
+                                sx={{ mt: 0 }} // Push buttons closer to the image
                             >
                                 <Button
                                     variant="contained"

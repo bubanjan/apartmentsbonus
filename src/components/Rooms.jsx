@@ -56,7 +56,7 @@ const Rooms = () => {
     const openLightbox = (folder) => {
         const images = Array.from(
             { length: 8 },
-            (_, i) => `/images/${folder}/one${i + 1}.jpg`
+            (_, i) => `/images/${folder}/pic${i + 1}.jpg`
         );
         setCurrentImages(images);
         setPhotoIndex(0);

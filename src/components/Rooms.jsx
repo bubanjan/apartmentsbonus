@@ -9,42 +9,42 @@ const rooms = [
         description:
             "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, big terrace, bathroom ",
         folder: "room1",
-        bestPhoto: "/images/room1/one1.jpg", // Add the path to the best photo
+        bestPhoto: "/images/room1/pic1.jpg", // Add the path to the best photo
     },
     {
         title: "Room 2",
         description:
             "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet , kitchen, balcony, bathroom",
         folder: "room2",
-        bestPhoto: "/images/room2/two10.jpg",
+        bestPhoto: "/images/room2/pic2.jpg",
     },
     {
         title: "Room 3",
         description:
             "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
         folder: "room3",
-        bestPhoto: "/images/room3/three3.jpg",
+        bestPhoto: "/images/room3/pic3.jpg",
     },
     {
         title: "Room 4",
         description:
             "Twin room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
         folder: "room4",
-        bestPhoto: "/images/room4/four1.jpg",
+        bestPhoto: "/images/room4/pic1.jpg",
     },
     {
         title: "Room 10",
         description:
             "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet , kitchen, balcony, bathroom  ",
         folder: "room10",
-        bestPhoto: "/images/room10/ten1.jpg",
+        bestPhoto: "/images/room10/pic1.jpg",
     },
     {
         title: "Room 12",
         description:
             "one-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet , terrace, bathroom ",
         folder: "room12",
-        bestPhoto: "/images/room12/twelve1.jpg",
+        bestPhoto: "/images/room12/pic1.jpg",
     },
 ];
 

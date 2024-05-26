@@ -7,7 +7,6 @@ import enTranslation from "./locales/en/translation.json";
 import srTranslation from "./locales/sr/translation.json";
 import ruTranslation from "./locales/ru/translation.json";
 import ukTranslation from "./locales/uk/translation.json";
-import svTranslation from "./locales/sv/translation.json";
 
 i18n.use(initReactI18next).init({
     resources: {
@@ -15,7 +14,6 @@ i18n.use(initReactI18next).init({
         sr: { translation: srTranslation },
         ru: { translation: ruTranslation },
         uk: { translation: ukTranslation },
-        sv: { translation: svTranslation },
     },
     lng: "en", // default language
     fallbackLng: "en",

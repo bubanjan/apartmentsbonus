@@ -20,7 +20,6 @@ const LanguageSwitcher = () => {
             <MenuItem value="sr">Serbian</MenuItem>
             <MenuItem value="ru">Russian</MenuItem>
             <MenuItem value="uk">Ukrainian</MenuItem>
-            <MenuItem value="sv">Swedish</MenuItem>
         </Select>
     );
 };

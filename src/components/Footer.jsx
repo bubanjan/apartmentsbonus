@@ -12,7 +12,8 @@ const Footer = () => {
             <Toolbar sx={{ justifyContent: "center" }}>
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                     <Typography variant="body1">
-                        Contact us: +382 33 123 456
+                        Contact us: +382 33 123 456 Address: Babilonija 112,
+                        Budva, Montenegro
                     </Typography>
                 </Box>
             </Toolbar>

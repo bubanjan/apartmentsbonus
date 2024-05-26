@@ -34,7 +34,7 @@ function App() {
                                 variant="h6"
                                 style={{ flexGrow: 1, marginRight: 45 }}
                             >
-                                Bonus Apartments
+                                Bonus Apartments Budva
                             </Typography>
                             <Button color="inherit" component={Link} to="/">
                                 Home

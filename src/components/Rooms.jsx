@@ -69,7 +69,7 @@ const Rooms = () => {
                 {rooms.map((room, index) => (
                     <Grid item xs={12} sm={6} md={4} sx={{ mt: 3 }} key={index}>
                         <Box
-                            border={1}
+                            sx={{ border: "2px solid lightBlue" }} //  border: "2px solid pink",
                             padding={2}
                             display="flex"
                             flexDirection="column"
@@ -77,7 +77,11 @@ const Rooms = () => {
                             height="100%"
                         >
                             <Box sx={{ mb: 0.5 }}>
-                                <Typography variant="h6" gutterBottom>
+                                <Typography
+                                    variant="h6"
+                                    gutterBottom
+                                    sx={{ color: "gray" }}
+                                >
                                     {room.title}
                                 </Typography>
                                 <Box

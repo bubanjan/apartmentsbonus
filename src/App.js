@@ -46,19 +46,20 @@ function App() {
                             >
                                 Rooms
                             </Button>
-                            <Button
-                                color="inherit"
-                                component={Link}
-                                to="/restaurant"
-                            >
-                                Restaurant
-                            </Button>
+
                             <Button
                                 color="inherit"
                                 component={Link}
                                 to="/book-room"
                             >
                                 Book Room
+                            </Button>
+                            <Button
+                                color="inherit"
+                                component={Link}
+                                to="/restaurant"
+                            >
+                                Restaurant
                             </Button>
                             <Button
                                 color="inherit"

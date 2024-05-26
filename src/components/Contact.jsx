@@ -1,6 +1,6 @@
 // src/components/Contact.jsx
 import React from "react";
-import { Container, Typography, Box, Link } from "@mui/material";
+import { Container, Typography, Box, Button } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -35,6 +35,11 @@ const Contact = () => {
             <Typography variant="h6" gutterBottom>
                 Contact Information
             </Typography>
+            <Box display="flex" alignItems="center" mb={1}>
+                <Typography variant="body1" sx={{ marginLeft: "8px" }}>
+                    Address: Babilonija 112, Budva, Montenegro
+                </Typography>
+            </Box>
             <Box>
                 <Box display="flex" alignItems="center" mb={1}>
                     <PhoneIcon />
@@ -60,6 +65,11 @@ const Contact = () => {
                         +382 67 123 456
                     </Typography>
                 </Box>
+            </Box>
+            <Box mt={4}>
+                <Button variant="contained" color="primary" href="/book-room">
+                    Book Room
+                </Button>
             </Box>
         </Container>
     );

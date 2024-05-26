@@ -79,13 +79,28 @@ const Rooms = () => {
                                     {room.description}
                                 </Typography>
                             </Box>
-                            <Box mt={2}>
+                            <Box
+                                mt={2}
+                                display="flex"
+                                flexDirection="column"
+                                gap={1}
+                            >
                                 <Button
                                     variant="contained"
                                     color="primary"
                                     onClick={() => openLightbox(room.folder)}
                                 >
                                     View Gallery
+                                </Button>
+                                <Button
+                                    variant="contained"
+                                    sx={{
+                                        backgroundColor: "pink",
+                                        color: "purple",
+                                    }}
+                                    href="/book-room"
+                                >
+                                    Book Room
                                 </Button>
                             </Box>
                         </Box>

@@ -80,13 +80,20 @@ const Rooms = () => {
                                 <Typography variant="h6" gutterBottom>
                                     {room.title}
                                 </Typography>
-                                <Typography
-                                    variant="body1"
-                                    paragraph
-                                    sx={{ fontSize: "14px" }}
+                                <Box
+                                    sx={{
+                                        height: "60px", // Fixed height for the description
+                                        overflow: "hidden",
+                                    }}
                                 >
-                                    {room.description}
-                                </Typography>
+                                    <Typography
+                                        variant="body1"
+                                        paragraph
+                                        sx={{ fontSize: "14px" }}
+                                    >
+                                        {room.description}
+                                    </Typography>
+                                </Box>
                             </Box>
                             <Box
                                 component="img"
@@ -98,14 +105,15 @@ const Rooms = () => {
                                     objectFit: "cover", // Maintain aspect ratio
                                     border: "2px solid pink",
                                     borderRadius: "2px",
-                                    mb: 0.5, // Decreased margin-bottom here
+                                    mb: 0, // Removed margin-bottom
                                 }}
                             />
                             <Box
-                                mt={0.5} // Decreased margin-top here
+                                mt={1} // Ensures some space between the image and the button
                                 display="flex"
                                 flexDirection="column"
                                 gap={1}
+                                sx={{ mt: "auto" }} // Push buttons to the bottom
                             >
                                 <Button
                                     variant="contained"

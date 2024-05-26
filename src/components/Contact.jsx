@@ -21,7 +21,7 @@ const Contact = () => {
                 }}
             >
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345083647!2d18.848079761026455!3d42.28936410143735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE3JzIwLjkiTiAxOMKwNTAnNTMuNSJF!5e0!3m2!1sen!2s!4v1591246643000!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.216500518275!2d18.848000133111704!3d42.28935305671298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE3JzIyLjMiTiAxOMKwNTAnNTMuMyJF!5e0!3m2!1sen!2s!4v1591246643000!5m2!1sen!2s"
                     style={{
                         border: 0,
                         width: "100%",

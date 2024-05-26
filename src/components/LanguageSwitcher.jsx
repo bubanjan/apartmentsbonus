@@ -11,7 +11,11 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <Select value={i18n.language} onChange={handleChange}>
+        <Select
+            value={i18n.language}
+            onChange={handleChange}
+            sx={{ color: "white" }}
+        >
             <MenuItem value="en">English</MenuItem>
             <MenuItem value="sr">Serbian</MenuItem>
             <MenuItem value="ru">Russian</MenuItem>

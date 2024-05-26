@@ -62,21 +62,32 @@ const Rooms = () => {
         <Container>
             <Grid container spacing={4}>
                 {rooms.map((room, index) => (
-                    <Grid item xs={12} sm={6} md={4} key={index}>
-                        <Box border={1} padding={2}>
-                            <Typography variant="h5" gutterBottom>
-                                {room.title}
-                            </Typography>
-                            <Typography variant="body1" paragraph>
-                                {room.description}
-                            </Typography>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                onClick={() => openLightbox(room.folder)}
-                            >
-                                View Gallery
-                            </Button>
+                    <Grid item xs={12} sm={6} md={4} sx={{ mt: 5 }} key={index}>
+                        <Box
+                            border={1}
+                            padding={2}
+                            display="flex"
+                            flexDirection="column"
+                            justifyContent="space-between"
+                            height="100%"
+                        >
+                            <Box>
+                                <Typography variant="h5" gutterBottom>
+                                    {room.title}
+                                </Typography>
+                                <Typography variant="body1" paragraph>
+                                    {room.description}
+                                </Typography>
+                            </Box>
+                            <Box mt={2}>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    onClick={() => openLightbox(room.folder)}
+                                >
+                                    View Gallery
+                                </Button>
+                            </Box>
                         </Box>
                     </Grid>
                 ))}

@@ -32,7 +32,7 @@ const Rooms = () => {
 
     return (
         <Container sx={{ flexGrow: 0 }}>
-            <Grid container spacing={1}>
+            <Grid container spacing={0.5}>
                 {rooms.map((room, index) => (
                     <Grid item xs={12} sm={6} md={4} sx={{ mt: 3 }} key={index}>
                         <Box

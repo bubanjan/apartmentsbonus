@@ -30,7 +30,7 @@ const Home = () => {
                 <img
                     src="/images/general/gen1.jpg"
                     alt="Hotel"
-                    style={{ width: "50%" }}
+                    style={{ width: "45%" }}
                 />
             </Box>
         </Container>

@@ -66,7 +66,7 @@ function App() {
                         </Box>
                     </Toolbar>
                 </AppBar>
-                <Box sx={{ flex: 0, mt: 1 }}>
+                <Box sx={{ flex: 0, mt: 0 }}>
                     <Routes>
                         <Route path="/rooms" element={<Rooms />} />
                         <Route path="/restaurant" element={<Restaurant />} />

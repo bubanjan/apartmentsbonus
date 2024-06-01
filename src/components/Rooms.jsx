@@ -5,21 +5,21 @@ import "react-image-lightbox/style.css"; // This only needs to be imported once 
 
 const rooms = [
     {
-        title: "Room 1",
+        title: "Apartment 1",
         description:
             "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, big terrace, bathroom ",
         folder: "room1",
         bestPhoto: "/images/room1/pic1.jpg", // Add the path to the best photo
     },
     {
-        title: "Room 2",
+        title: "Apartment 2",
         description:
             "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet , kitchen, balcony, bathroom",
         folder: "room2",
         bestPhoto: "/images/room2/pic2.jpg",
     },
     {
-        title: "Room 3",
+        title: "Apartment 3",
         description:
             "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
         folder: "room3",
@@ -33,14 +33,14 @@ const rooms = [
         bestPhoto: "/images/room4/pic1.jpg",
     },
     {
-        title: "Room 10",
+        title: "Apartment 10",
         description:
             "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet , kitchen, balcony, bathroom  ",
         folder: "room10",
         bestPhoto: "/images/room10/pic1.jpg",
     },
     {
-        title: "Room 12",
+        title: "Apartment 12",
         description:
             "one-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet , terrace, bathroom ",
         folder: "room12",
@@ -107,7 +107,7 @@ const Rooms = () => {
                                     width: "100%",
                                     height: "140px", // Fixed height
                                     objectFit: "cover", // Maintain aspect ratio
-                                    border: "2px solid pink",
+
                                     borderRadius: "2px",
                                     mb: 0, // Small margin-bottom
                                 }}

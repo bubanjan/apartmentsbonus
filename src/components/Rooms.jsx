@@ -1,4 +1,3 @@
-// src/components/Rooms.jsx
 import React, { useState } from "react";
 import {
     Container,
@@ -15,42 +14,42 @@ const rooms = [
     {
         title: "Apartment 1",
         description:
-            "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, big terrace, bathroom ",
+            "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, bathroom ",
         folder: "room1",
         bestPhoto: "/images/room1/pic1.jpg", // Add the path to the best photo
     },
     {
         title: "Apartment 2",
         description:
-            "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet , kitchen, balcony, bathroom",
+            "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet, kitchen, bathroom",
         folder: "room2",
         bestPhoto: "/images/room2/pic2.jpg",
     },
     {
         title: "Apartment 3",
         description:
-            "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
+            "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, bathroom",
         folder: "room3",
-        bestPhoto: "/images/room3/pic3.jpg",
+        bestPhoto: "/images/room3/pic1.jpg",
     },
     {
         title: "Room 4",
         description:
-            "Twin room with balcony, air conditioning, TV, wi fi internet, fridge, balcony, bathroom",
+            "Twin room with balcony, air conditioning, TV, wi fi internet, fridge, bathroom",
         folder: "room4",
         bestPhoto: "/images/room4/pic1.jpg",
     },
     {
         title: "Apartment 10",
         description:
-            "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet , kitchen, balcony, bathroom  ",
+            "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet, kitchen, bathroom  ",
         folder: "room10",
         bestPhoto: "/images/room10/pic1.jpg",
     },
     {
         title: "Apartment 12",
         description:
-            "one-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet , terrace, bathroom ",
+            "one-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet, bathroom ",
         folder: "room12",
         bestPhoto: "/images/room12/pic1.jpg",
     },
@@ -73,7 +72,7 @@ const Rooms = () => {
 
     return (
         <Container sx={{ flexGrow: 0 }}>
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
                 {rooms.map((room, index) => (
                     <Grid item xs={12} sm={6} md={4} sx={{ mt: 3 }} key={index}>
                         <Box
@@ -95,7 +94,7 @@ const Rooms = () => {
                                     {room.title}
                                 </Typography>
                                 <Box
-                                    sx={{ height: "60px", overflow: "hidden" }}
+                                    sx={{ height: "60px", overflow: "hidden" }} // Increased height here
                                 >
                                     <Typography
                                         variant="body1"
@@ -119,7 +118,8 @@ const Rooms = () => {
                                         height: "140px",
                                         objectFit: "cover",
                                         borderRadius: "2px",
-                                        mb: 0,
+                                        marginTop: 0,
+                                        padding: 0,
                                     }}
                                 />
                             </ButtonBase>
@@ -132,7 +132,7 @@ const Rooms = () => {
                                 <Button
                                     variant="contained"
                                     color="primary"
-                                    sx={{ height: 30, flex: 1 }}
+                                    sx={{ height: 25, flex: 1 }}
                                     onClick={() => openLightbox(room.folder)}
                                 >
                                     <Typography
@@ -147,7 +147,7 @@ const Rooms = () => {
                                     sx={{
                                         backgroundColor: "darkGreen",
                                         color: "white",
-                                        height: 30,
+                                        height: 25,
                                         flex: 1,
                                     }}
                                     href="/book-room"

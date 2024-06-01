@@ -9,8 +9,10 @@ import BookRoom from "./components/BookRoom";
 import Contact from "./components/Contact";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import Footer from "./components/Footer"; // Import the Footer component
+import { useTranslation } from "react-i18next";
 
 function App() {
+    const { t } = useTranslation();
     return (
         <Router>
             <Stack
@@ -30,35 +32,35 @@ function App() {
                                 Bonus Apartments Budva
                             </Typography>
                             <Button color="inherit" component={Link} to="/">
-                                Home
+                                {t("homeMenuButton")}
                             </Button>
                             <Button
                                 color="inherit"
                                 component={Link}
                                 to="/rooms"
                             >
-                                Rooms
+                                {t("roomsMenuButton")}
                             </Button>
                             <Button
                                 color="inherit"
                                 component={Link}
                                 to="/book-room"
                             >
-                                Book Room
+                                {t("bookRoomMenuButton")}
                             </Button>
                             <Button
                                 color="inherit"
                                 component={Link}
                                 to="/restaurant"
                             >
-                                Restaurant
+                                {t("restaurantMenuButton")}
                             </Button>
                             <Button
                                 color="inherit"
                                 component={Link}
                                 to="/contact"
                             >
-                                Contact
+                                {t("contactMenuButton")}
                             </Button>
                             <Box ml={2}>
                                 <LanguageSwitcher />

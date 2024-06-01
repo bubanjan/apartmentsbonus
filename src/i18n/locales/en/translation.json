@@ -2,5 +2,44 @@
     "welcome": "Apartments Bonus",
     "intro1": "Apartments Bonus is set in a peaceful residential area of Budva near Slovenian beach, just 300 m from the main pebbly beach.",
     "intro2": "There is a restaurant on the ground floor of the property which offers half board, full board, breakfast only, or a-la-cart. A grocery shop can be found right next to the property, while numerous bars and nightclubs can be found just a couple of minutes walk from the Bonus. Local buses stop just 100 meters from Bonus Apartments and drive to any of the 14 nice beaches in Budva (Jaz, Becici, Kamenovo, Sveti Stefan...) for just 1.5 EUR per bus ticket.",
-    "intro3": "We offer accommodation in first category rooms and apartments with air-conditioning, cable TV, free Wi-Fi internet, kitchen (apartments), fridge (rooms), terrace, and bathroom."
+    "intro3": "We offer accommodation in first category rooms and apartments with air-conditioning, cable TV, free Wi-Fi internet, kitchen (apartments), fridge (rooms), terrace, and bathroom.",
+
+    "rooms": [
+        {
+            "title": "Apartment 1",
+            "description": "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, bathroom",
+            "folder": "room1",
+            "bestPhoto": "/images/room1/pic1.jpg"
+        },
+        {
+            "title": "Apartment 2",
+            "description": "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet, kitchen, bathroom",
+            "folder": "room2",
+            "bestPhoto": "/images/room2/pic2.jpg"
+        },
+        {
+            "title": "Apartment 3",
+            "description": "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, bathroom",
+            "folder": "room3",
+            "bestPhoto": "/images/room3/pic1.jpg"
+        },
+        {
+            "title": "Room 4",
+            "description": "Twin room with balcony, air conditioning, TV, wi fi internet, fridge, bathroom",
+            "folder": "room4",
+            "bestPhoto": "/images/room4/pic1.jpg"
+        },
+        {
+            "title": "Apartment 10",
+            "description": "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet, kitchen, bathroom",
+            "folder": "room10",
+            "bestPhoto": "/images/room10/pic1.jpg"
+        },
+        {
+            "title": "Apartment 12",
+            "description": "One-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet, bathroom",
+            "folder": "room12",
+            "bestPhoto": "/images/room12/pic1.jpg"
+        }
+    ]
 }

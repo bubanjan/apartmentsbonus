@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
     Container,
     Typography,
@@ -8,54 +9,13 @@ import {
     ButtonBase,
 } from "@mui/material";
 import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
-
-const rooms = [
-    {
-        title: "Apartment 1",
-        description:
-            "Studio apartment with big terrace, 4 persons, air conditioning, TV, wi fi internet, kitchen, bathroom ",
-        folder: "room1",
-        bestPhoto: "/images/room1/pic1.jpg", // Add the path to the best photo
-    },
-    {
-        title: "Apartment 2",
-        description:
-            "Studio apartment with balcony (for 3 persons) air conditioning, TV, wi fi internet, kitchen, bathroom",
-        folder: "room2",
-        bestPhoto: "/images/room2/pic2.jpg",
-    },
-    {
-        title: "Apartment 3",
-        description:
-            "Triple room with balcony, air conditioning, TV, wi fi internet, fridge, bathroom",
-        folder: "room3",
-        bestPhoto: "/images/room3/pic1.jpg",
-    },
-    {
-        title: "Room 4",
-        description:
-            "Twin room with balcony, air conditioning, TV, wi fi internet, fridge, bathroom",
-        folder: "room4",
-        bestPhoto: "/images/room4/pic1.jpg",
-    },
-    {
-        title: "Apartment 10",
-        description:
-            "One-bedroom apartment with balcony for 4 persons, living room, bedroom, air conditioning, TV, wi fi internet, kitchen, bathroom  ",
-        folder: "room10",
-        bestPhoto: "/images/room10/pic1.jpg",
-    },
-    {
-        title: "Apartment 12",
-        description:
-            "one-bedroom apartment with terrace (up to 5 persons), living room, bedroom, kitchen, air conditioning, TV, wi fi internet, bathroom ",
-        folder: "room12",
-        bestPhoto: "/images/room12/pic1.jpg",
-    },
-];
+import "react-image-lightbox/style.css";
 
 const Rooms = () => {
+    const { t } = useTranslation();
+
+    const rooms = t("rooms", { returnObjects: true });
+
     const [photoIndex, setPhotoIndex] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
     const [currentImages, setCurrentImages] = useState([]);
@@ -94,7 +54,7 @@ const Rooms = () => {
                                     {room.title}
                                 </Typography>
                                 <Box
-                                    sx={{ height: "60px", overflow: "hidden" }} // Increased height here
+                                    sx={{ height: "60px", overflow: "hidden" }}
                                 >
                                     <Typography
                                         variant="body1"
@@ -139,7 +99,7 @@ const Rooms = () => {
                                         variant="body1"
                                         sx={{ fontSize: "12px" }}
                                     >
-                                        View Gallery
+                                        {t("viewGallery")}
                                     </Typography>
                                 </Button>
                                 <Button
@@ -156,7 +116,7 @@ const Rooms = () => {
                                         variant="body1"
                                         sx={{ fontSize: "12px" }}
                                     >
-                                        Book Room
+                                        {t("bookRoom")}
                                     </Typography>
                                 </Button>
                             </Box>

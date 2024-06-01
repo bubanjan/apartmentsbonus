@@ -2,5 +2,43 @@
     "welcome": "Apartmani Bonus",
     "intro1": "Apartmani Bonus se nalaze u mirnom stambenom području Budve u blizini slovenačke plaže, samo 300 metara udaljeni od glavne pješčane plaže.",
     "intro2": "U prizemlju objekta nalazi se restoran koji nudi polupansion, puni pansion, samo doručak ili à la carte. Prodavnica prehrambenih proizvoda nalazi se odmah pored objekta, dok se brojni barovi i noćni klubovi nalaze samo nekoliko minuta hoda od Bonusa. Lokalni autobusi staju svega 100 metara od Apartmana Bonus i voze do bilo koje od 14 lepih plaža u Budvi (Jaz, Bečići, Kamenovo, Sveti Stefan...) za samo 1,5 EUR po autobuskoj karti.",
-    "intro3": "Nudimo smeštaj u sobama i apartmanima prve kategorije sa klima-uređajem, kablovskom televizijom, besplatnim Wi-Fi internetom, kuhinjom (apartmani), frižiderom (sobe), terasom i kupatilom."
+    "intro3": "Nudimo smeštaj u sobama i apartmanima prve kategorije sa klima-uređajem, kablovskom televizijom, besplatnim Wi-Fi internetom, kuhinjom (apartmani), frižiderom (sobe), terasom i kupatilom.",
+    "rooms": [
+        {
+            "title": "Apartman 1",
+            "description": "Studio apartman sa velikom terasom, 4 osobe, klima-uređaj, TV, Wi-Fi internet, kuhinja, kupatilo",
+            "folder": "room1",
+            "bestPhoto": "/images/room1/pic1.jpg"
+        },
+        {
+            "title": "Apartman 2",
+            "description": "Studio apartman sa balkonom (za 3 osobe), klima-uređaj, TV, Wi-Fi internet, kuhinja, kupatilo",
+            "folder": "room2",
+            "bestPhoto": "/images/room2/pic2.jpg"
+        },
+        {
+            "title": "Apartman 3",
+            "description": "Trostruka soba sa balkonom, klima-uređaj, TV, Wi-Fi internet, frižider, kupatilo",
+            "folder": "room3",
+            "bestPhoto": "/images/room3/pic1.jpg"
+        },
+        {
+            "title": "Soba 4",
+            "description": "Dvokrevetna soba sa balkonom, klima-uređaj, TV, Wi-Fi internet, frižider, kupatilo",
+            "folder": "room4",
+            "bestPhoto": "/images/room4/pic1.jpg"
+        },
+        {
+            "title": "Apartman 10",
+            "description": "Jednosoban apartman sa balkonom za 4 osobe, dnevna soba, spavaća soba, klima-uređaj, TV, Wi-Fi internet, kuhinja, kupatilo",
+            "folder": "room10",
+            "bestPhoto": "/images/room10/pic1.jpg"
+        },
+        {
+            "title": "Apartman 12",
+            "description": "Jednosoban apartman sa terasom (do 5 osoba), dnevna soba, spavaća soba, kuhinja, klima-uređaj, TV, Wi-Fi internet, kupatilo",
+            "folder": "room12",
+            "bestPhoto": "/images/room12/pic1.jpg"
+        }
+    ]
 }

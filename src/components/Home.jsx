@@ -25,7 +25,7 @@ const Home = () => {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                sx={{ mt: 5 }}
+                sx={{ mt: 2 }}
             >
                 <img
                     src="/images/general/gen1.jpg"

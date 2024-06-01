@@ -18,7 +18,7 @@ const Home = () => {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                sx={{ mt: 15 }}
+                sx={{ mt: 0 }}
             >
                 <img
                     src="/images/general/gen1.jpg"

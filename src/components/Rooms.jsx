@@ -1,5 +1,13 @@
+// src/components/Rooms.jsx
 import React, { useState } from "react";
-import { Container, Typography, Grid, Box, Button } from "@mui/material";
+import {
+    Container,
+    Typography,
+    Grid,
+    Box,
+    Button,
+    ButtonBase,
+} from "@mui/material";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 
@@ -64,17 +72,19 @@ const Rooms = () => {
     };
 
     return (
-        <Container>
+        <Container sx={{ flexGrow: 0 }}>
             <Grid container spacing={2}>
                 {rooms.map((room, index) => (
                     <Grid item xs={12} sm={6} md={4} sx={{ mt: 3 }} key={index}>
                         <Box
-                            sx={{ border: "2px solid lightBlue" }} // border: "2px solid pink",
-                            padding={2}
-                            display="flex"
-                            flexDirection="column"
-                            justifyContent="space-between"
-                            height="100%"
+                            sx={{
+                                border: "2px solid lightBlue",
+                                padding: 1,
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between",
+                                height: "100%",
+                            }}
                         >
                             <Box sx={{ mb: 1 }}>
                                 <Typography
@@ -85,10 +95,7 @@ const Rooms = () => {
                                     {room.title}
                                 </Typography>
                                 <Box
-                                    sx={{
-                                        height: "60px", // Fixed height for the description
-                                        overflow: "hidden",
-                                    }}
+                                    sx={{ height: "60px", overflow: "hidden" }}
                                 >
                                     <Typography
                                         variant="body1"
@@ -99,29 +106,33 @@ const Rooms = () => {
                                     </Typography>
                                 </Box>
                             </Box>
-                            <Box
-                                component="img"
-                                src={room.bestPhoto}
-                                alt={room.title}
-                                sx={{
-                                    width: "100%",
-                                    height: "140px", // Fixed height
-                                    objectFit: "cover", // Maintain aspect ratio
-
-                                    borderRadius: "2px",
-                                    mb: 0, // Small margin-bottom
-                                }}
-                            />
+                            <ButtonBase
+                                onClick={() => openLightbox(room.folder)}
+                                sx={{ display: "block", textAlign: "initial" }}
+                            >
+                                <Box
+                                    component="img"
+                                    src={room.bestPhoto}
+                                    alt={room.title}
+                                    sx={{
+                                        width: "100%",
+                                        height: "140px",
+                                        objectFit: "cover",
+                                        borderRadius: "2px",
+                                        mb: 0,
+                                    }}
+                                />
+                            </ButtonBase>
                             <Box
                                 display="flex"
-                                flexDirection="column"
+                                flexDirection="row"
                                 gap={1}
-                                sx={{ mt: 0 }} // Push buttons closer to the image
+                                sx={{ mt: 0 }}
                             >
                                 <Button
                                     variant="contained"
                                     color="primary"
-                                    sx={{ height: 30 }} // Increased button height for consistency
+                                    sx={{ height: 30, flex: 1 }}
                                     onClick={() => openLightbox(room.folder)}
                                 >
                                     <Typography
@@ -136,7 +147,8 @@ const Rooms = () => {
                                     sx={{
                                         backgroundColor: "darkGreen",
                                         color: "white",
-                                        height: 30, // Increased button height for consistency
+                                        height: 30,
+                                        flex: 1,
                                     }}
                                     href="/book-room"
                                 >

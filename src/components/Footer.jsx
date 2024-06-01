@@ -5,7 +5,7 @@ import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 const Footer = () => {
     return (
         <AppBar
-            position="static"
+            //position="static"
             component="footer"
             sx={{ top: "auto", bottom: 0 }}
         >

@@ -1,14 +1,7 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import {
-    AppBar,
-    Toolbar,
-    Typography,
-    Button,
-    Container,
-    Box,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box, Stack } from "@mui/material";
 import Home from "./components/Home";
 import Rooms from "./components/Rooms";
 import Restaurant from "./components/Restaurant";
@@ -20,19 +13,19 @@ import Footer from "./components/Footer"; // Import the Footer component
 function App() {
     return (
         <Router>
-            <Box
+            <Stack
                 sx={{
                     display: "flex",
                     flexDirection: "column",
-                    minHeight: "100vh",
+                    //minHeight: "100vh",
                 }}
             >
-                <AppBar position="static">
+                <AppBar position="sticky">
                     <Toolbar sx={{ justifyContent: "center" }}>
                         <Box sx={{ display: "flex", alignItems: "center" }}>
                             <Typography
                                 variant="h6"
-                                style={{ flexGrow: 1, marginRight: 45 }}
+                                sx={{ flexGrow: 1, marginRight: 4.5 }}
                             >
                                 Bonus Apartments Budva
                             </Typography>
@@ -46,7 +39,6 @@ function App() {
                             >
                                 Rooms
                             </Button>
-
                             <Button
                                 color="inherit"
                                 component={Link}
@@ -74,7 +66,7 @@ function App() {
                         </Box>
                     </Toolbar>
                 </AppBar>
-                <Container style={{ flex: 1, marginTop: "20px" }}>
+                <Box sx={{ flex: 0, mt: 1 }}>
                     <Routes>
                         <Route path="/rooms" element={<Rooms />} />
                         <Route path="/restaurant" element={<Restaurant />} />
@@ -82,9 +74,9 @@ function App() {
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/" element={<Home />} />
                     </Routes>
-                </Container>
+                </Box>
                 <Footer /> {/* Add the Footer component */}
-            </Box>
+            </Stack>
         </Router>
     );
 }

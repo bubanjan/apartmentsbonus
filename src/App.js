@@ -77,7 +77,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                     </Routes>
                 </Box>
-                <Footer /> {/* Add the Footer component */}
+                {/*   <Footer /> */}
             </Stack>
         </Router>
     );

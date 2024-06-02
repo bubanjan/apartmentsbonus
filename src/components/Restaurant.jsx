@@ -20,7 +20,7 @@ const Restaurant = () => {
     };
 
     return (
-        <Container>
+        <Container sx={{ mt: "100px", ml: "350px" }}>
             <Typography variant="h4" gutterBottom>
                 Restaurant
             </Typography>

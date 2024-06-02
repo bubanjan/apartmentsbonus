@@ -8,7 +8,7 @@ import ViberIcon from "./ViberIcon.js";
 
 const Contact = () => {
     return (
-        <Container>
+        <Container sx={{ mt: 2 }}>
             <Typography variant="h4" gutterBottom>
                 Contact Us
             </Typography>
@@ -66,7 +66,7 @@ const Contact = () => {
                     </Typography>
                 </Box>
             </Box>
-            <Box mt={4}>
+            <Box mt={2}>
                 <Button variant="contained" color="primary" href="/book-room">
                     Book Room
                 </Button>

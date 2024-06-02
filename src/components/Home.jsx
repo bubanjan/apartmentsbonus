@@ -7,7 +7,11 @@ const Home = () => {
     const { t } = useTranslation();
 
     return (
-        <Stack direction="row" flex sx={{ my: "150px", ml: "200px" }}>
+        <Stack
+            direction="row"
+            flex
+            sx={{ mt: "70px", mb: "150px", ml: "200px" }}
+        >
             <Stack flex="1">
                 <Typography variant="h4" gutterBottom>
                     {t("welcome")}

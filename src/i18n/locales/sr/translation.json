@@ -3,7 +3,7 @@
     "bookRoom": "Rezerviši sobu",
     "welcome": "Apartmani Bonus",
     "intro1": "Apartmani Bonus se nalaze u mirnom stambenom području Budve u blizini Slovenske plaže, samo 300 metara udaljeni od glavne pješčane plaže.",
-    "intro2": "U prizemlju objekta nalazi se restoran. Prodavnica prehrambenih proizvoda nalazi se odmah pored objekta, dok se brojni barovi i noćni klubovi nalaze samo nekoliko minuta hoda od Bonusa. Lokalni autobusi staju svega 100 metara od Apartmana Bonus i voze do bilo koje od 14 lijepih plaža u Budvi (Jaz, Bečići, Kamenovo, Sveti Stefan...) za samo 1,5 EUR po autobuskoj karti.",
+    "intro2": "U prizemlju objekta nalazi se restoran koji nudi ukusnu hranu i koktele. Prodavnica prehrambenih proizvoda nalazi se odmah pored objekta, dok se brojni barovi i noćni klubovi nalaze samo nekoliko minuta hoda od Bonusa. Lokalni autobusi staju svega 100 metara od Apartmana Bonus i voze do bilo koje od 14 lijepih plaža u Budvi (Jaz, Bečići, Kamenovo, Sveti Stefan...) za samo 1,5 EUR po autobuskoj karti.",
     "intro3": "Nudimo smeštaj u sobama i apartmanima prve kategorije sa klima-uređajem, kablovskom televizijom, Wi-Fi internetom, kuhinjom (apartmani), frižiderom (sobe), terasom i kupatilom.",
     "homeMenuButton": "Početna",
     "roomsMenuButton": "Sobe",
@@ -25,7 +25,7 @@
             "bestPhoto": "/images/room2/pic2.jpg"
         },
         {
-            "title": "Apartman 3",
+            "title": "Soba 3",
             "description": "Trostruka soba sa balkonom, klima-uređaj, TV, Wi-Fi internet, frižider, kupatilo",
             "folder": "room3",
             "bestPhoto": "/images/room3/pic1.jpg"

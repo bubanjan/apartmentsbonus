@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
 import {
     Container,
@@ -110,7 +112,8 @@ const Rooms = () => {
                                         height: 25,
                                         flex: 1,
                                     }}
-                                    href="/book-room"
+                                    component={Link}
+                                    to="/book-room"
                                 >
                                     <Typography
                                         variant="body1"

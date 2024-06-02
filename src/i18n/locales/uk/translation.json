@@ -10,6 +10,7 @@
     "bookRoomMenuButton": "Забронювати",
     "restaurantMenuButton": "Ресторан",
     "contactMenuButton": "Контакт",
+    "restaurantDescription": "Ресторан на першому поверсі будівлі, який пропонує смачну їжу та коктейлі.",
     "rooms": [
         {
             "title": "Апартамент 1",

@@ -11,6 +11,7 @@
     "bookRoomMenuButton": "Забронировать",
     "restaurantMenuButton": "Ресторан",
     "contactMenuButton": "Контакт",
+    "restaurantDescription": "Ресторан на первом этаже здания, который предлагает вкусную еду и коктейли.",
     "rooms": [
         {
             "title": "Апартамент 1",

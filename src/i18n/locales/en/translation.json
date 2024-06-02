@@ -10,6 +10,7 @@
     "bookRoomMenuButton": "Book Room",
     "restaurantMenuButton": "Restaurant",
     "contactMenuButton": "Contact",
+    "restaurantDescription": "Restaurant on the ground floor of the object which offers tasty food and cocktails.",
     "rooms": [
         {
             "title": "Apartment 1",

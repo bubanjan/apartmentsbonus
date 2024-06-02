@@ -10,6 +10,7 @@
     "bookRoomMenuButton": "Rezerviši sobu",
     "restaurantMenuButton": "Restoran",
     "contactMenuButton": "Kontakt",
+    "restaurantDescription": "Restoran u prizemlju objekta koji nudi ukusnu hranu i koktele.",
     "rooms": [
         {
             "title": "Apartman 1",

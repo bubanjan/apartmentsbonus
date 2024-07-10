@@ -1,4 +1,3 @@
-// src/components/Restaurant.js
 import React, { useState } from "react";
 import {
     Container,
@@ -10,7 +9,7 @@ import {
 } from "@mui/material";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import InstagramIcon from "@mui/icons-material/Instagram"; // Import Instagram icon from MUI
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { useTranslation } from "react-i18next";
 
 const Restaurant = () => {
@@ -30,13 +29,14 @@ const Restaurant = () => {
     };
 
     return (
-        <Container sx={{ mt: "100px", ml: "350px" }}>
+        <Container
+            sx={{
+                mt: { xs: "20px", md: "100px" },
+                ml: { xs: "10px", md: "350px" },
+            }}
+        >
             <Stack direction="row" alignItems="center">
-                <Typography
-                    variant="h4"
-                    gutterBottom
-                    style={{ marginBottom: 0 }}
-                >
+                <Typography variant="h4" gutterBottom>
                     Restaurant Grape
                 </Typography>
                 <Link
@@ -44,35 +44,27 @@ const Restaurant = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     underline="none"
-                    style={{
+                    sx={{
                         color: "pink",
                         display: "flex",
                         alignItems: "center",
-                        marginLeft: "10px",
+                        ml: "10px",
                     }}
                 >
-                    <InstagramIcon
-                        sx={{ fontSize: 30, margin: 0, padding: 0 }}
-                    />
+                    <InstagramIcon sx={{ fontSize: 30 }} />
                     <Typography
                         variant="h6"
                         component="span"
-                        style={{
-                            marginLeft: "5px",
-                            marginTop: 0,
-                            marginBottom: 0,
-                        }}
+                        sx={{ ml: "5px" }}
                     >
                         Instagram
                     </Typography>
                 </Link>
             </Stack>
 
-            <Stack direction="row" sx={{ mt: "15px" }}>
-                <Typography variant="body1" paragraph>
-                    {t("restaurantDescription")}
-                </Typography>{" "}
-            </Stack>
+            <Typography variant="body1" paragraph sx={{ mt: "15px" }}>
+                {t("restaurantDescription")}
+            </Typography>
 
             <ButtonBase
                 onClick={openLightbox}
@@ -84,11 +76,10 @@ const Restaurant = () => {
                     alt="Restaurant"
                     sx={{
                         width: "100%",
-                        height: "300px",
+                        height: { xs: "auto", md: "300px" },
                         objectFit: "cover",
                         borderRadius: "2px",
-                        marginTop: 2,
-                        padding: 0,
+                        mt: 2,
                     }}
                 />
             </ButtonBase>
@@ -117,8 +108,6 @@ const Restaurant = () => {
                     }
                 />
             )}
-
-            {/* Instagram icon with link */}
         </Container>
     );
 };

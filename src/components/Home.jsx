@@ -1,4 +1,3 @@
-// src/components/Home.js
 import React from "react";
 import { Container, Typography, Box, Stack } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -8,9 +7,14 @@ const Home = () => {
 
     return (
         <Stack
-            direction="row"
+            direction={{ xs: "column", md: "row" }}
             flex
-            sx={{ mt: "70px", mb: "150px", ml: "200px" }}
+            sx={{
+                mt: "70px",
+                mb: "150px",
+                ml: { xs: "0", md: "200px" },
+                alignItems: "center",
+            }}
         >
             <Stack flex="1">
                 <Typography variant="h4" gutterBottom>
@@ -37,7 +41,7 @@ const Home = () => {
                 <img
                     src="/images/general/gen1.jpg"
                     alt="Hotel"
-                    style={{ width: "60%", height: "95%" }}
+                    style={{ width: "80%", height: "auto" }}
                 />
             </Box>
         </Stack>

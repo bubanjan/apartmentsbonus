@@ -44,25 +44,25 @@ const Contact = () => {
                 <Box display="flex" alignItems="center" mb={1}>
                     <PhoneIcon />
                     <Typography variant="body1" sx={{ marginLeft: "8px" }}>
-                        Tel: +38268866138
+                        Tel: +38268485654
                     </Typography>
                 </Box>
                 <Box display="flex" alignItems="center" mb={1}>
                     <TelegramIcon />
                     <Typography variant="body1" sx={{ marginLeft: "8px" }}>
-                        Telegram: +46762207680
+                        Telegram: +38268485654
                     </Typography>
                 </Box>
                 <Box display="flex" alignItems="center" mb={1}>
                     <WhatsAppIcon />
                     <Typography variant="body1" sx={{ marginLeft: "8px" }}>
-                        WhatsApp: +46762207680
+                        WhatsApp: +38268485654
                     </Typography>
                 </Box>
                 <Box display="flex" alignItems="center" mb={1}>
                     <ViberIcon />
                     <Typography variant="body1" sx={{ marginLeft: "8px" }}>
-                        Viber: +46762207680
+                        Viber: +38268485654
                     </Typography>
                 </Box>
             </Box>

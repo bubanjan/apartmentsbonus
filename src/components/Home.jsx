@@ -16,7 +16,7 @@ const Home = () => {
                 alignItems: "center",
             }}
         >
-            <Stack flex="1">
+            <Stack flex="1" sx={{ mx: 3 }}>
                 <Typography variant="h4" gutterBottom>
                     {t("welcome")}
                 </Typography>

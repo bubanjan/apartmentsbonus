@@ -4,6 +4,10 @@
 
 Mobile-friendly, and multilingual website built with React for a small hotel located in the beautiful country of Montenegro.
 
+## To run the application locally, run these commands:
+1. npm install
+2. npm start
+
 ---
 
 ## ✨ Features

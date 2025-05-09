@@ -11,7 +11,7 @@ Mobile-friendly, and multilingual website built with React for a small hotel loc
 - 🏨 **Responsive design** — fully functional on phones, tablets, and desktops  
 - 🌐 **Multilanguage support** — available in 4 languages via `i18next`  
 - 📸 **Image gallery** with React Image Lightbox integration  
-- 🎨 **Stylish UI** powered by Material UI  
+- 🎨 **UI** powered by Material UI  
 
 ---
 

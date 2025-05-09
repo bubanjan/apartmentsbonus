@@ -1,6 +1,6 @@
 # 🌍 React website for Small Hotel in Montenegro
 
-**Live Demo:** [bonusn.netlify.app](https://bonusn.netlify.app)
+**Live Demo:** [bonusn.netlify.app](https://bonusb.netlify.app)
 
 Mobile-friendly, and multilingual website built with React for a small hotel located in the beautiful country of Montenegro.
 

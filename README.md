@@ -2,7 +2,7 @@
 
 **Live Demo:** [bonusn.netlify.app](https://bonusb.netlify.app)
 
-Mobile-friendly, and multilingual website built with React for a small hotel located in the beautiful country of Montenegro.
+Mobile-friendly, and multilingual website built with React for a small hotel located in Montenegro.
 
 ## To run the application locally, run these commands:
 1. npm install
